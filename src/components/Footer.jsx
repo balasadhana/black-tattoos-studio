@@ -75,23 +75,52 @@ const Footer = () => {
               Premium tattoo studio dedicated to creating timeless, high-contrast body art.
             </p>
 
-            {/* Contact Details */}
-            <div className="space-y-4 font-medium">
-              <div className="flex items-center space-x-4 text-base sm:text-lg lg:text-xl text-gray-200 group cursor-pointer">
-                <MapPin className="w-6 h-6 text-[#00c8f0] shrink-0 transition-transform duration-300 group-hover:scale-115 group-hover:text-[#08b4df]" />
-                <span className="group-hover:text-white transition-colors">123 Art District, City Center</span>
-              </div>
-              <div className="flex items-center space-x-4 text-base sm:text-lg lg:text-xl text-gray-200 group cursor-pointer">
-                <Phone className="w-6 h-6 text-[#00c8f0] shrink-0 transition-transform duration-300 group-hover:scale-115 group-hover:text-[#08b4df]" />
-                <a href="tel:+911234567890" className="hover:text-[#00c8f0] transition-colors">
-                  +91 12345 67890
-                </a>
-              </div>
-              <div className="flex items-center space-x-4 text-base sm:text-lg lg:text-xl text-gray-200 group cursor-pointer">
-                <Mail className="w-6 h-6 text-[#00c8f0] shrink-0 transition-transform duration-300 group-hover:scale-115 group-hover:text-[#08b4df]" />
-                <a href="mailto:hello@blacktattoo.com" className="hover:text-[#00c8f0] transition-colors">
-                  hello@blacktattoo.com
-                </a>
+            {/* Studio Locations Grid (Ellis Nagar & Pasumalai) */}
+            <div className="space-y-4">
+              <h4 className="text-sm font-bold text-[#00c8f0] uppercase tracking-[0.2em]">
+                STUDIO LOCATIONS (MADURAI)
+              </h4>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+                {/* Branch 1 - Dinesh */}
+                <div className="bg-[#0b121e] border border-white/12 rounded-xl p-4 transition-all duration-300 hover:border-[#00c8f0]/60 hover:shadow-[0_0_20px_rgba(0,200,240,0.15)] group">
+                  <div className="flex items-center space-x-2 mb-2">
+                    <span className="bg-[#00c8f0] text-black text-[11px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                      BRANCH 1
+                    </span>
+                    <span className="text-white text-sm font-bold">Mr. Dinesh</span>
+                  </div>
+                  <div className="flex items-start space-x-2.5 text-gray-300 text-sm mb-2">
+                    <MapPin className="w-4 h-4 text-[#00c8f0] shrink-0 mt-0.5" />
+                    <span>Ellis Nagar, Madurai</span>
+                  </div>
+                  <div className="flex items-center space-x-2.5 text-gray-300 text-sm">
+                    <Phone className="w-4 h-4 text-[#00c8f0] shrink-0" />
+                    <a href="tel:+918973747449" className="hover:text-[#00c8f0] transition-colors font-medium">
+                      +91 89737 47449
+                    </a>
+                  </div>
+                </div>
+
+                {/* Branch 2 - Vijay */}
+                <div className="bg-[#0b121e] border border-white/12 rounded-xl p-4 transition-all duration-300 hover:border-[#00c8f0]/60 hover:shadow-[0_0_20px_rgba(0,200,240,0.15)] group">
+                  <div className="flex items-center space-x-2 mb-2">
+                    <span className="bg-[#00c8f0] text-black text-[11px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                      BRANCH 2
+                    </span>
+                    <span className="text-white text-sm font-bold">Mr. Vijay</span>
+                  </div>
+                  <div className="flex items-start space-x-2.5 text-gray-300 text-sm mb-2">
+                    <MapPin className="w-4 h-4 text-[#00c8f0] shrink-0 mt-0.5" />
+                    <span>Pasumalai, Madurai</span>
+                  </div>
+                  <div className="flex items-center space-x-2.5 text-gray-300 text-sm">
+                    <Phone className="w-4 h-4 text-[#00c8f0] shrink-0" />
+                    <a href="tel:+916382073503" className="hover:text-[#00c8f0] transition-colors font-medium">
+                      +91 63820 73503
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
