@@ -82,10 +82,10 @@ const About = () => {
               </h2>
 
               {/* Content Row: Paragraphs Left + Visible Monogram Logo Right */}
-              <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-5 lg:gap-6 xl:gap-8">
+              <div className="relative flex flex-col md:flex-row items-center md:items-start justify-between gap-5 lg:gap-6 xl:gap-8">
 
                 {/* Left Text Block */}
-                <div className="flex-1 max-w-full md:max-w-[480px] lg:max-w-[520px] xl:max-w-[550px]">
+                <div className="relative z-10 flex-1 max-w-full md:max-w-[480px] lg:max-w-[520px] xl:max-w-[550px]">
                   {/* Paragraph 1 */}
                   <p className="font-inter text-xs sm:text-base md:text-[16px] lg:text-[17px] text-gray-300 font-normal leading-[1.68] tracking-normal mb-4 sm:mb-5">
                     At Black Tattoo, We Believe Every Tattoo Is A Reflection Of Individuality, Memories, And Self-Expression. Our Mission Is To Transform Your Ideas Into Meaningful Art Work That You'll Proudly Carry For A Lifetime.
@@ -107,12 +107,12 @@ const About = () => {
                   </div>
                 </div>
 
-                {/* Right Visible Gothic BT Monogram Logo - Floating & Soft Glow Animation */}
-                <div className="relative flex-shrink-0 w-[220px] sm:w-[260px] lg:w-[290px] xl:w-[330px] h-[320px] sm:h-[380px] lg:h-[430px] flex items-center justify-center select-none pointer-events-none self-center md:self-start ml-auto -mr-6 sm:-mr-10 lg:-mr-16 xl:-mr-20 animate-float">
+                {/* Monogram Logo: Absolute Background Watermark on Mobile (< md), Relative Side Image on Desktop (>= md) */}
+                <div className="absolute right-0 bottom-0 md:relative flex-shrink-0 w-[180px] sm:w-[220px] md:w-[260px] lg:w-[290px] xl:w-[330px] h-[240px] sm:h-[300px] md:h-[380px] lg:h-[430px] flex items-center justify-center select-none pointer-events-none opacity-20 md:opacity-75 lg:opacity-85 z-0 md:z-10 ml-auto md:-mr-6 sm:-mr-10 lg:-mr-16 xl:-mr-20 animate-float">
                   <img
                     src={btMonogramImg}
                     alt="Black Tattoo Monogram Logo"
-                    className="w-full h-full object-contain filter brightness-180 contrast-130 drop-shadow-[0_0_25px_rgba(255,255,255,0.25)] opacity-75 lg:opacity-85 transition-all duration-700 hover:scale-105"
+                    className="w-full h-full object-contain filter brightness-180 contrast-130 drop-shadow-[0_0_25px_rgba(255,255,255,0.25)] transition-all duration-700 hover:scale-105"
                   />
                 </div>
 
