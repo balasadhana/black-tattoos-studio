@@ -75,38 +75,18 @@ const Footer = () => {
               Premium tattoo studio dedicated to creating timeless, high-contrast body art.
             </p>
 
-            {/* Studio Locations Grid (Ellis Nagar & Pasumalai) */}
+            {/* Studio Locations Grid (Pasumalai & Ellis Nagar) */}
             <div className="space-y-4">
               <h4 className="text-sm font-bold text-[#00c8f0] uppercase tracking-[0.2em]">
                 STUDIO LOCATIONS (MADURAI)
               </h4>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
-                {/* Branch 1 - Dinesh */}
+                {/* Studio 01 - Vijay */}
                 <div className="bg-[#0b121e] border border-white/12 rounded-xl p-4 transition-all duration-300 hover:border-[#00c8f0]/60 hover:shadow-[0_0_20px_rgba(0,200,240,0.15)] group">
                   <div className="flex items-center space-x-2 mb-2">
                     <span className="bg-[#00c8f0] text-black text-[11px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
-                      BRANCH 1
-                    </span>
-                    <span className="text-white text-sm font-bold">Mr. Dinesh</span>
-                  </div>
-                  <div className="flex items-start space-x-2.5 text-gray-300 text-sm mb-2">
-                    <MapPin className="w-4 h-4 text-[#00c8f0] shrink-0 mt-0.5" />
-                    <span>Ellis Nagar, Madurai</span>
-                  </div>
-                  <div className="flex items-center space-x-2.5 text-gray-300 text-sm">
-                    <Phone className="w-4 h-4 text-[#00c8f0] shrink-0" />
-                    <a href="tel:+918973747449" className="hover:text-[#00c8f0] transition-colors font-medium">
-                      +91 89737 47449
-                    </a>
-                  </div>
-                </div>
-
-                {/* Branch 2 - Vijay */}
-                <div className="bg-[#0b121e] border border-white/12 rounded-xl p-4 transition-all duration-300 hover:border-[#00c8f0]/60 hover:shadow-[0_0_20px_rgba(0,200,240,0.15)] group">
-                  <div className="flex items-center space-x-2 mb-2">
-                    <span className="bg-[#00c8f0] text-black text-[11px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
-                      BRANCH 2
+                      STUDIO 01
                     </span>
                     <span className="text-white text-sm font-bold">Mr. Vijay</span>
                   </div>
@@ -118,6 +98,26 @@ const Footer = () => {
                     <Phone className="w-4 h-4 text-[#00c8f0] shrink-0" />
                     <a href="tel:+916382073503" className="hover:text-[#00c8f0] transition-colors font-medium">
                       +91 63820 73503
+                    </a>
+                  </div>
+                </div>
+
+                {/* Studio 02 - Dinesh */}
+                <div className="bg-[#0b121e] border border-white/12 rounded-xl p-4 transition-all duration-300 hover:border-[#00c8f0]/60 hover:shadow-[0_0_20px_rgba(0,200,240,0.15)] group">
+                  <div className="flex items-center space-x-2 mb-2">
+                    <span className="bg-[#00c8f0] text-black text-[11px] font-extrabold px-2.5 py-0.5 rounded-full uppercase tracking-wider">
+                      STUDIO 02
+                    </span>
+                    <span className="text-white text-sm font-bold">Mr. Dinesh</span>
+                  </div>
+                  <div className="flex items-start space-x-2.5 text-gray-300 text-sm mb-2">
+                    <MapPin className="w-4 h-4 text-[#00c8f0] shrink-0 mt-0.5" />
+                    <span>Ellis Nagar, Madurai</span>
+                  </div>
+                  <div className="flex items-center space-x-2.5 text-gray-300 text-sm">
+                    <Phone className="w-4 h-4 text-[#00c8f0] shrink-0" />
+                    <a href="tel:+918973747449" className="hover:text-[#00c8f0] transition-colors font-medium">
+                      +91 89737 47449
                     </a>
                   </div>
                 </div>
