@@ -6,16 +6,21 @@ const Hero = () => {
     <section
       id="home"
       className="relative min-h-screen w-full bg-black overflow-hidden flex flex-col justify-start"
-      style={{
-        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.85) 20%, rgba(0, 0, 0, 0.3) 38%, rgba(0, 0, 0, 0) 52%), url(${heroBg})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'right center',
-        backgroundRepeat: 'no-repeat',
-        filter: 'brightness(1.1) contrast(1.05)'
-      }}
     >
+      {/* Background Image Layer with Mobile-Optimized Position */}
+      <div
+        className="absolute inset-0 w-full h-full bg-cover bg-no-repeat filter brightness-110 contrast-105 transition-all duration-700"
+        style={{
+          backgroundImage: `url(${heroBg})`,
+          backgroundPosition: 'center center',
+        }}
+      />
+
+      {/* Responsive Gradient Overlay: Top-to-Bottom on Mobile for Image Visibility, Left-to-Right on Desktop */}
+      <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-black/85 via-black/50 to-black/80 md:from-black/95 md:via-black/75 md:to-transparent pointer-events-none" />
+
       {/* Content Container aligned 100% straight with the Black Tattoo Logo */}
-      <div className="w-full max-w-[1650px] mx-auto px-8 sm:px-16 lg:px-28 xl:px-36 pt-28 sm:pt-32 md:pt-36 lg:pt-[220px] xl:pt-[260px] pb-16">
+      <div className="relative z-10 w-full max-w-[1650px] mx-auto px-8 sm:px-16 lg:px-28 xl:px-36 pt-28 sm:pt-32 md:pt-36 lg:pt-[220px] xl:pt-[260px] pb-16">
         <div className="max-w-2xl lg:max-w-4xl xl:max-w-5xl flex flex-col items-start text-left">
 
           {/* Eyebrow Tag - TOP */}
