@@ -190,22 +190,32 @@ const Footer = () => {
             }`}
           >
             <h4 className="text-base sm:text-lg font-bold text-[#00c8f0] uppercase tracking-[0.2em] mb-7">
-              FOLLOW US
+              INSTAGRAM
             </h4>
-            <div className="flex items-center space-x-5">
+            <div className="space-y-3">
               <a 
-                href="#" 
-                aria-label="Instagram"
-                className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#0d1624] border border-white/15 flex items-center justify-center text-[#00c8f0] hover:border-[#00c8f0] hover:bg-[#00c8f0] hover:text-black hover:scale-110 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,200,240,0.6)] transition-all duration-300 shadow-md group"
+                href="https://www.instagram.com/_.black_tattoo_madurai._/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Mr. Vijay Instagram"
+                className="flex items-center space-x-3 text-sm text-gray-300 hover:text-[#00c8f0] group transition-colors"
               >
-                <Instagram className="w-6 h-6 transition-transform group-hover:scale-110" />
+                <div className="w-10 h-10 rounded-full bg-[#0d1624] border border-white/15 flex items-center justify-center text-[#00c8f0] group-hover:border-[#00c8f0] group-hover:bg-[#00c8f0] group-hover:text-black transition-all duration-300 shadow-md">
+                  <Instagram className="w-5 h-5 transition-transform group-hover:scale-110" />
+                </div>
+                <span className="font-medium">Mr. Vijay (Studio 01)</span>
               </a>
               <a 
-                href="#" 
-                aria-label="Twitter / X"
-                className="w-13 h-13 sm:w-14 sm:h-14 rounded-full bg-[#0d1624] border border-white/15 flex items-center justify-center text-[#00c8f0] hover:border-[#00c8f0] hover:bg-[#00c8f0] hover:text-black hover:scale-110 hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(0,200,240,0.6)] transition-all duration-300 shadow-md group"
+                href="https://www.instagram.com/black_tattoos_2.0_madurai?stkn=MXMyMTVkejhtZWlzdQ%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Mr. Dinesh Instagram"
+                className="flex items-center space-x-3 text-sm text-gray-300 hover:text-[#00c8f0] group transition-colors"
               >
-                <X className="w-6 h-6 transition-transform group-hover:scale-110" />
+                <div className="w-10 h-10 rounded-full bg-[#0d1624] border border-white/15 flex items-center justify-center text-[#00c8f0] group-hover:border-[#00c8f0] group-hover:bg-[#00c8f0] group-hover:text-black transition-all duration-300 shadow-md">
+                  <Instagram className="w-5 h-5 transition-transform group-hover:scale-110" />
+                </div>
+                <span className="font-medium">Mr. Dinesh (Studio 02)</span>
               </a>
             </div>
           </div>

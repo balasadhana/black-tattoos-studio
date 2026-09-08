@@ -39,7 +39,7 @@ const Artists = () => {
       image: artistDhineshImg,
       delay: 'delay-300',
       socials: {
-        instagram: '#',
+        instagram: 'https://www.instagram.com/black_tattoos_2.0_madurai?stkn=MXMyMTVkejhtZWlzdQ%3D%3D',
         whatsapp: 'https://wa.me/918973747449',
       },
     },
@@ -51,7 +51,7 @@ const Artists = () => {
       image: artistVijayImg,
       delay: 'delay-500',
       socials: {
-        instagram: '#',
+        instagram: 'https://www.instagram.com/_.black_tattoo_madurai._/',
         whatsapp: 'https://wa.me/916382073503',
       },
     },
@@ -208,6 +208,8 @@ const Artists = () => {
                     {/* Instagram */}
                     <a
                       href={artist.socials.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       aria-label={`${artist.name} Instagram`}
                       className="w-9 h-9 rounded-full bg-[#069cc1] text-black flex items-center justify-center hover:bg-[#08b4df] hover:scale-110 transition-all duration-300 shadow-md"
                     >
@@ -217,6 +219,8 @@ const Artists = () => {
                     {/* WhatsApp */}
                     <a
                       href={artist.socials.whatsapp}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       aria-label={`${artist.name} WhatsApp`}
                       className="w-9 h-9 rounded-full bg-[#069cc1] text-black flex items-center justify-center hover:bg-[#08b4df] hover:scale-110 transition-all duration-300 shadow-md"
                     >
