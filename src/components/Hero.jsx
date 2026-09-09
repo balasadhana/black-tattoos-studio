@@ -7,17 +7,16 @@ const Hero = () => {
       id="home"
       className="relative min-h-screen w-full bg-black overflow-hidden flex flex-col justify-start"
     >
-      {/* Background Image Layer with Mobile-Optimized Position */}
+      {/* Background Image Layer with Mobile-Optimized Position Focus (75% 35%) */}
       <div
-        className="absolute inset-0 w-full h-full bg-cover bg-no-repeat filter brightness-110 contrast-105 transition-all duration-700"
+        className="absolute inset-0 w-full h-full bg-cover bg-no-repeat bg-[position:75%_35%] md:bg-[position:right_center] filter brightness-125 contrast-110 transition-all duration-700"
         style={{
           backgroundImage: `url(${heroBg})`,
-          backgroundPosition: 'center center',
         }}
       />
 
-      {/* Responsive Gradient Overlay: Top-to-Bottom on Mobile for Image Visibility, Left-to-Right on Desktop */}
-      <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-black/85 via-black/50 to-black/80 md:from-black/95 md:via-black/75 md:to-transparent pointer-events-none" />
+      {/* Responsive Gradient Overlay: Gentle Top-to-Bottom Gradient on Mobile to Keep Hand Artwork Vibrant */}
+      <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-black/80 via-black/40 to-black/85 md:from-black/95 md:via-black/75 md:to-transparent pointer-events-none" />
 
       {/* Content Container aligned 100% straight with the Black Tattoo Logo */}
       <div className="relative z-10 w-full max-w-[1650px] mx-auto px-8 sm:px-16 lg:px-28 xl:px-36 pt-28 sm:pt-32 md:pt-36 lg:pt-[220px] xl:pt-[260px] pb-16">
