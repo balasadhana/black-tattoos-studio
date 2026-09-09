@@ -7,7 +7,6 @@ import Artists from './components/Artists';
 import Reviews from './components/Reviews';
 import Booking from './components/Booking';
 import Footer from './components/Footer';
-import FloatingWhatsApp from './components/FloatingWhatsApp';
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
         <Booking />
       </main>
       <Footer />
-      <FloatingWhatsApp />
     </div>
   );
 }
