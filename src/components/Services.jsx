@@ -3,6 +3,7 @@ import serviceCustomImg from '../assets/service-custom.png';
 import servicePortraitImg from '../assets/service-portrait.png';
 import serviceSleeveImg from '../assets/service-sleeve.png';
 import serviceFinelineImg from '../assets/service-fineline.png';
+import servicePiercingImg from '../assets/service-piercing.png';
 import serviceMakeupImg from '../assets/service-makeup.png';
 
 const servicesData = [
@@ -34,7 +35,7 @@ const servicesData = [
     id: '05',
     numberTitle: '05. PIERCING',
     description: 'Safe, Hygienic Piercing Services Performed With Professional Precision.',
-    image: serviceCustomImg,
+    image: servicePiercingImg,
   },
   {
     id: '06',
