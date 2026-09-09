@@ -3,7 +3,8 @@ import artistDhineshImg from '../assets/artist-dhinesh.png';
 import artistVijayImg from '../assets/artist-vijay.png';
 import badgeCertifiedImg from '../assets/badge-certified.png';
 import badgeExpertsImg from '../assets/badge-experts.png';
-import { Instagram, MessageCircle } from 'lucide-react';
+import { Instagram } from 'lucide-react';
+import { WhatsAppIcon } from './FloatingWhatsApp';
 
 const Artists = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -218,13 +219,15 @@ const Artists = () => {
 
                     {/* WhatsApp */}
                     <a
-                      href={artist.socials.whatsapp}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      href="#book"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById('book')?.scrollIntoView({ behavior: 'smooth' });
+                      }}
                       aria-label={`${artist.name} WhatsApp`}
-                      className="w-9 h-9 rounded-full bg-[#069cc1] text-black flex items-center justify-center hover:bg-[#08b4df] hover:scale-110 transition-all duration-300 shadow-md"
+                      className="w-9 h-9 rounded-full bg-[#069cc1] text-black flex items-center justify-center hover:bg-[#08b4df] hover:scale-110 transition-all duration-300 shadow-md cursor-pointer"
                     >
-                      <MessageCircle size={18} className="stroke-[2.5]" />
+                      <WhatsAppIcon className="w-5 h-5 fill-black" />
                     </a>
 
                   </div>
