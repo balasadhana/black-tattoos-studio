@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import serviceCustomImg from '../assets/service-custom.png';
 import servicePortraitImg from '../assets/service-portrait.png';
+import serviceSleeveImg from '../assets/service-sleeve.png';
 import serviceFinelineImg from '../assets/service-fineline.png';
 import serviceMakeupImg from '../assets/service-makeup.png';
 
@@ -27,7 +28,7 @@ const servicesData = [
     id: '04',
     numberTitle: '04. SLEEVE TATTOO',
     description: 'Custom Sleeve Artwork Designed For Bold, Long-Lasting Impact.',
-    image: servicePortraitImg,
+    image: serviceSleeveImg,
   },
   {
     id: '05',
