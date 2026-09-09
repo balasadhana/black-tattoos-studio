@@ -50,21 +50,26 @@ const ServiceCard = ({ service, isVisible, index }) => (
     style={{
       transitionDelay: isVisible ? `${(index + 1) * 120}ms` : '0ms',
     }}
-    className={`relative group rounded-[12px] border border-transparent bg-neutral-950 overflow-hidden w-full aspect-[427/326] shadow-2xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform ${
-      isVisible
+    className={`relative group rounded-[12px] border border-transparent bg-neutral-950 overflow-hidden w-full aspect-[427/326] shadow-2xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform ${isVisible
         ? 'opacity-100 translate-y-0 scale-100 filter brightness-100'
         : 'opacity-0 translate-y-16 scale-95 pointer-events-none filter brightness-50'
-    } hover:border-[#069cc1] hover:shadow-[0_20px_50px_rgba(6,156,193,0.45)] hover:-translate-y-2.5 hover:scale-[1.02]`}
+      } hover:border-[#069cc1] hover:shadow-[0_20px_50px_rgba(6,156,193,0.45)] hover:-translate-y-2.5 hover:scale-[1.02]`}
   >
-    {/* Background Tattoo Image */}
+    {/* Background Tattoo Image with Moody Dark Contrast Filter matching Card 01 */}
     <img
       src={service.image}
       alt={service.numberTitle}
-      className="w-full h-full object-cover scale-[1.02] transition-all duration-700 ease-out group-hover:scale-110 filter brightness-105 contrast-105 group-hover:brightness-115"
+      className="w-full h-full object-cover scale-[1.02] transition-all duration-700 ease-out group-hover:scale-110 filter brightness-[0.88] contrast-[1.15] saturate-[0.90] group-hover:brightness-[0.98] group-hover:contrast-[1.10]"
     />
 
-    {/* Bottom Gradient Vignette overlay for text legibility */}
-    <div className="absolute bottom-0 inset-x-0 h-[65%] bg-gradient-to-t from-black/98 via-black/50 to-transparent pointer-events-none transition-opacity duration-500 group-hover:opacity-90" />
+    {/* Overall Moody Dark Tint Overlay */}
+    <div className="absolute inset-0 bg-black/30 pointer-events-none transition-opacity duration-500 group-hover:bg-black/15" />
+
+    {/* Top Shadow Vignette (Matches Card 01 top dark framing) */}
+    <div className="absolute top-0 inset-x-0 h-[35%] bg-gradient-to-b from-black/85 via-black/45 to-transparent pointer-events-none" />
+
+    {/* Bottom Dark Gradient Overlay for Text Readability */}
+    <div className="absolute bottom-0 inset-x-0 h-[70%] bg-gradient-to-t from-black via-black/85 via-40% to-transparent pointer-events-none transition-opacity duration-500 group-hover:opacity-90" />
 
     {/* Shimmer Sweep Effect on Hover */}
     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-shimmer pointer-events-none" />
@@ -132,33 +137,30 @@ const Services = () => {
 
           {/* Eyebrow Tag */}
           <p
-            className={`text-[#069cc1] font-inter text-xs sm:text-[13px] font-semibold tracking-[0.2em] uppercase mb-2.5 sm:mb-3 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform ${
-              isVisible
+            className={`text-[#069cc1] font-inter text-xs sm:text-[13px] font-semibold tracking-[0.2em] uppercase mb-2.5 sm:mb-3 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform ${isVisible
                 ? 'opacity-100 translate-y-0 scale-100'
                 : 'opacity-0 -translate-y-12 scale-95 pointer-events-none'
-            }`}
+              }`}
           >
             OUR SERVICES
           </p>
 
           {/* Main Section Title */}
           <h2
-            className={`font-koulen text-3xl sm:text-4xl md:text-[48px] lg:text-[54px] xl:text-[58px] font-normal text-white uppercase leading-tight tracking-[0.02em] mb-3 sm:mb-4 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] delay-150 transform ${
-              isVisible
+            className={`font-koulen text-3xl sm:text-4xl md:text-[48px] lg:text-[54px] xl:text-[58px] font-normal text-white uppercase leading-tight tracking-[0.02em] mb-3 sm:mb-4 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] delay-150 transform ${isVisible
                 ? 'opacity-100 translate-y-0 scale-100'
                 : 'opacity-0 -translate-y-16 scale-95 pointer-events-none'
-            }`}
+              }`}
           >
             WHAT WE OFFER
           </h2>
 
           {/* Subtitle Description */}
           <p
-            className={`font-inter text-gray-300 text-xs sm:text-sm md:text-[15px] lg:text-[16px] font-normal leading-[1.6] max-w-[860px] mx-auto transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] delay-300 transform ${
-              isVisible
+            className={`font-inter text-gray-300 text-xs sm:text-sm md:text-[15px] lg:text-[16px] font-normal leading-[1.6] max-w-[860px] mx-auto transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] delay-300 transform ${isVisible
                 ? 'opacity-100 translate-y-0'
                 : 'opacity-0 -translate-y-12 pointer-events-none'
-            }`}
+              }`}
           >
             From Custom Tattoos To Professional Piercing And Permanent Makeup, We Deliver Premium Body Art Services With Exceptional Craftsmanship, Precision, And The Highest Standards Of Hygiene.
           </p>
