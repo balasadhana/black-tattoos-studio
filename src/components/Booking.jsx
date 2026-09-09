@@ -10,9 +10,9 @@ import {
   Clock,
   FileText,
   Check,
-  ChevronDown,
-  MessageCircle
+  ChevronDown
 } from 'lucide-react';
+import { WhatsAppIcon } from './FloatingWhatsApp';
 
 const Booking = () => {
   const [formData, setFormData] = useState({
@@ -458,7 +458,7 @@ _Sent via BlackTattoo Online Booking_`;
                   disabled={submitted}
                   className="w-full bg-[#00c8f0] hover:bg-[#08d9ff] active:scale-[0.99] text-black font-poppins font-extrabold text-base sm:text-lg tracking-wider uppercase py-4 rounded-lg shadow-[0_0_25px_rgba(0,200,240,0.35)] transition-all duration-300 hover:shadow-[0_0_35px_rgba(0,200,240,0.55)] flex items-center justify-center space-x-2.5 cursor-pointer"
                 >
-                  <MessageCircle className="w-6 h-6 text-black fill-black/10" />
+                  <WhatsAppIcon className="w-6 h-6 text-black" />
                   <span>{submitted ? 'OPENING WHATSAPP...' : 'REQUEST APPOINTMENT VIA WHATSAPP'}</span>
                 </button>
 
