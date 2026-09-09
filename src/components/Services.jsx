@@ -58,7 +58,7 @@ const ServiceCard = ({ service, isVisible, index }) => (
     <img
       src={service.image}
       alt={service.numberTitle}
-      className="w-full h-full object-cover transition-all duration-700 ease-out group-hover:scale-110 filter brightness-105 contrast-105 group-hover:brightness-115"
+      className="w-full h-full object-cover scale-[1.02] transition-all duration-700 ease-out group-hover:scale-110 filter brightness-105 contrast-105 group-hover:brightness-115"
     />
 
     {/* Bottom Gradient Vignette overlay for text legibility */}
