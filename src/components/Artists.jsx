@@ -166,7 +166,7 @@ const Artists = () => {
             {founders.map((artist) => (
               <div
                 key={artist.id}
-                className={`relative group rounded-xl sm:rounded-2xl border border-white/20 bg-neutral-950 overflow-hidden aspect-[4/5.2] h-[460px] sm:h-[520px] lg:h-[580px] w-full shadow-2xl transition-all duration-800 ease-[cubic-bezier(0.16,1,0.3,1)] ${artist.delay} transform ${
+                className={`relative group rounded-xl sm:rounded-2xl border border-transparent bg-neutral-950 overflow-hidden aspect-[4/5.2] h-[460px] sm:h-[520px] lg:h-[580px] w-full shadow-2xl transition-all duration-800 ease-[cubic-bezier(0.16,1,0.3,1)] ${artist.delay} transform ${
                   isVisible
                     ? 'opacity-100 translate-x-0 scale-100'
                     : 'opacity-0 translate-x-12 scale-95 pointer-events-none'

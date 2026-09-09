@@ -48,7 +48,7 @@ const ServiceCard = ({ service, isVisible, index }) => (
     style={{
       transitionDelay: isVisible ? `${(index + 1) * 120}ms` : '0ms',
     }}
-    className={`relative group rounded-[12px] border border-white/20 bg-neutral-950 overflow-hidden w-full aspect-[427/326] shadow-2xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform ${
+    className={`relative group rounded-[12px] border border-transparent bg-neutral-950 overflow-hidden w-full aspect-[427/326] shadow-2xl transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] transform ${
       isVisible
         ? 'opacity-100 translate-y-0 scale-100 filter brightness-100'
         : 'opacity-0 translate-y-16 scale-95 pointer-events-none filter brightness-50'

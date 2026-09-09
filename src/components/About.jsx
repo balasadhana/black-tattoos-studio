@@ -50,7 +50,7 @@ const About = () => {
               ? 'opacity-100 translate-x-0 translate-y-0 scale-100' 
               : 'opacity-0 -translate-x-16 translate-y-6 scale-95 pointer-events-none'
           }`}>
-            <div className="relative w-full max-w-[440px] sm:max-w-[480px] lg:max-w-[500px] xl:max-w-[530px] aspect-square rounded-[12px] overflow-hidden border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,0.95)] group transition-all duration-500 hover:border-[#069cc1]/60 hover:shadow-[0_20px_50px_rgba(6,156,193,0.35)]">
+            <div className="relative w-full max-w-[440px] sm:max-w-[480px] lg:max-w-[500px] xl:max-w-[530px] aspect-square rounded-[12px] overflow-hidden border border-transparent shadow-[0_25px_60px_rgba(0,0,0,0.95)] group transition-all duration-500 hover:border-[#069cc1]/60 hover:shadow-[0_20px_50px_rgba(6,156,193,0.35)]">
               <img
                 src={aboutStudioImg}
                 alt="Black Tattoo Studio Interior"
